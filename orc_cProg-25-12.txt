@@ -1,0 +1,4799 @@
+
+		// Orchid College of Engineering, solapur
+		// Google Meet: https://meet.google.com/ghx-pzss-zfz
+		// C Programming Problems Exercises: https://onlinegdb.com/classroom/invite/H1KvvPkUv
+		// Github link: https://github.com/trainingarcher/C-Programming-Orchid-College
+
+				---- C programming ----
+
+	Computer: It is data processing unit.
+
+			    Input --> [ ]  --> Output
+			   (Data)  Processing  (Information) 
+				     Unit		
+
+
+			data: Facts, Properties character. of entity under consid. 
+
+			Info: well processed data.
+
+	Computer is 2 state, Multipurpose, programmable, electronic device, Which takes input from user, store it, process on it
+	and gives the output in desired format.
+
+
+		 				  CPU  
+					_________________________
+					|			|
+				|----->	|	  CU		|---> sends the command signal to every connected peripherial
+				|	|_______________________|
+		   Input	|	|			|	 	 Output
+		    [ ]		|   |-->|	  ALU		|---|     |--->   [ ]
+		     |		|   |	|_______________________|   |	  |
+		     |		|   |---|			|<--|	  |
+		     |		|-------|	  IM		|	  |
+		     |---------------->	|_______________________|---------|
+					       ^          |	
+					 ______|__________V______
+					|			|
+					|	  EM		|
+					|_______________________|
+
+
+							Computer 
+						            |
+						---------------------------------
+						|				|
+					   Hardware			     Software
+						|				|
+				----------------------			--------------------------
+				|		     |			|			 |	
+ 			       CPU            Peripherial 	     System		     Application
+				|		Devices		     Soft.		     Soft.		
+			     - CU                   |			|			 |
+			     - ALU 		- Input Dev.	      - OS			- CAD/CAD Soft
+			     - IM		- Output Dev.	      - Device Drivers		- Antivirus
+								      - Lang.Processor		- Ms-Office
+												- Media Players
+
+
+
+		Memory: Storage Area
+
+					Memory
+					  |
+				-------------------------
+				|			|
+			    Internal		     External
+				|			|
+			-----------------	  -------------------------
+			|		|	  |	|	|	  |
+		  Tmp/volatile/   Per/Non-Vola.  HDD   CD     DVD    PD,Memory cards
+		  short-term   	  long-term	
+			|		|
+		       RAM             ROM	
+                     - SRAM             |
+		     - DRAM    ---------------------------
+			       | 	|	|	 |
+			    Simple    PROM    EPROM  EEPROM	
+			     ROM
+
+
+
+		data flows in terms of electrical signals thw the system. we know that electrical
+		energy can be stored but we unable to store the electrical signals. so it can be stored 		
+		in magnetic form.
+
+
+				A
+
+			    10011010	(assumed)  (ascii)
+
+			__/\__/\/\_/\_
+		_________________________________________________________
+		| @--@@-@-						|
+	Write	|							|
+  ------------  |							|	
+	Read	|							|
+		|							|
+		|							|
+		|_______________________________________________________|
+
+
+			__/\__/\/\_/\_
+	
+			 10011010	
+			
+			     A
+
+
+
+	Memory Units: 
+	
+		BInary digiTS ---> bits
+		0 or 1 --> bit
+
+		4 bits --> 1 nibble
+		8 bits --> 1 byte
+		1024 bytes --> 1 KB
+		1024 KB ---> 1 MB
+		1024 MB --> 1 GB	
+		1024 GB --> 1 TB
+
+
+	ASCII: ASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. 			ASCII codes represent text in computers, telecommunications equipment, and other devices
+
+		A ==> 0010101...  ==> 65
+
+		A-Z ==> 65 to 90
+
+		a-z ==> 97 to 122
+
+
+	In TC, Addressible memory is 64k (65535 bytes)
+
+			[][][][][][][][][]
+			[][][][][][][][][]
+			[][][][][][][][][]
+			[][][][][][][][][]
+			[][][][][][][][][]
+			[][][][][][][][][]
+
+
+//=========================================================================================================================================
+
+
+		Language: It is way of communication.	
+
+
+		programming language: set of symbols used to communicate with computer using some rules.
+
+		lang. Processor: convert human code into m/c code and vice versa
+
+				- Assembler
+				- Interpreter
+				- Compiler
+
+
+Here we are using Compiler in C programming
+
+
+
+			Instructions            Prog_nm
+                              |___________________|
+                                         |
+		                         |           Debug
+		source code	     *.c/*.cpp <---------------------|
+					 |			     ^	     
+					 |			     |
+				       compile --------------------->| compile-time error
+  					 |			     |	(syntax Errors)
+					 |			     |
+		backup file		*.bak			     | 
+					 |			     |	
+			Linker --------->|-------------------------->| Linker errors
+					 |			     |	
+	object code file		*.obj			     |
+					 |			     |
+					 |			     ^	
+	executable file 		*.exe			     |
+					 |			     |
+					Run ------------------------>| Runtime errors
+					 |
+				       Output
+
+
+
+
+				Programming Language
+					   |
+				------------------------
+				|			|
+			       LLL		       HLL
+			  Assembly 		   Fortran, java C++, VB, C# ...
+			up,uc....
+
+
+
+	As C has features of both HLL and LLL, It is known as middle level language.
+
+
+		     SIMULA
+		     COBOL								   |-- Sun Microsystem --> Java
+	Assembly --> Fortran ----> ALGOL60 --> CPL --> BCPL-----> B -----> C ----> C++ ====|-- Microsoft corpo.--> .Net
+		     RPG	    (1960)   (1963)    (1967)    (1970)   (1972) (1983-84) |-- .......
+		     BASIC								   |
+		     Pascal
+		     ....
+
+
+
+
+	How to learn C Programming:
+	==========================
+
+	
+	English  --->  character set  ---> words  ---> sen --> para --> chapter ---> book
+
+
+						constant	
+	C programming --> Character set -->	keyword   ----> Instruction ---> Program ---> Module ---> Software
+						variable
+
+
+
+
+Character set: We are using the lowercase US English for the coding so character set is same as English
+				which includes....
+
+					Alphabets:
+							- Uppercase A to Z
+							- Lowercase a to z
+
+					Digits: 	0 to 9
+
+
+					Special Symbols: !@#$%^&*(_)+ ....
+
+
+
+		Constant, variable and keyword: 
+
+		Constant is element in the program which has fix value, and which can not be changed.
+
+								C Constants
+								    |
+							---------------------------
+							|			  |
+						    Numeric 		     Non-Numeric
+							|			|
+						-----------------	-----------------
+						|		|	|		|	
+					   Integer     floating-point  character     String
+					-6,4,56    -5.3,7.0,78.6755    'a', '$'     "A", "Hello"		
+									'H' '4'	     "a123"
+
+
+
+		variable: suppose, the formula of simple interst
+
+				si = (p*r*n) / 100 ;
+
+			variables ---> p,r,n,si
+			constant  ---> 100
+
+		Variable is element in the program which may change during the program execution.
+
+
+		Keyword: These are reserved words, whose meaning is already known to compiler. 
+			 There are 32 keywords in C. and therse are
+
+		auto		double		int		struct
+		break		else		long		switch
+		case		enum		register	typedef
+		char		extern		return		union
+		continue	for		signed		void
+		do		if		static		while
+		default		goto		sizeof		volatile
+		const		float		short		unsigned
+
+
+
+	// 	Instruction : It is command issued to perform the specific task.	
+
+				There are 4 different types of instructions.
+
+					1. Input-Output Instruction
+					2. Type Decl. Instruction
+					3. Arithmetic instruction
+					4. Control Instruction
+
+
+	Concept of Editor and IDE: notepad, Turboc++ IDE, codeblocks, Online Compiler.
+
+int main()
+{
+	Instruction_1;
+	Instruction_2;
+	Instruction_3;
+	Instruction_4;
+
+
+	Instruction_N;
+
+	return 0;
+}
+
+//-----------------------------------------------------------------------------------------------------------------
+
+	// 1. Input-Output Instruction: 
+
+		// 1. Output Instruction: 
+
+	// First Program: Welcome Program
+
+#include<stdio.h>
+int main()
+{
+	printf("Welcome to C Programming");
+	return 0;
+}
+
+
+	printf() is built-in (library) function, defined in stdio.h used to display the data on screen.
+
+	syntax:
+		printf("<Format_String>");
+
+//-----------------------------------------------------------------------------------------------------
+
+	// WAP to display the personal details of person
+
+int main()
+{
+	printf("------ Personal Details ----------");
+	printf("name: Amit Sambhaji Pol");
+	printf("Address: 12D, Anand Apt, ch.Shivaji Maharaj Chowk, Pune-6");
+	printf("Gender: M  Age: 21");
+	printf("Birth Date: 10/10/2000");
+	printf("Email: abc@gmail.com");
+	printf("Marks: HSC: 89.45% SSC: 67.43");
+	printf("ajay is my good friend");
+	printf("what about you?");
+	return 0;	
+}
+
+output:
+
+------ Personal Details ----------name: Amit Sambhaji PolAddress: 12D, Anand Apt, ch.Shivaji Maharaj Chowk, Pune-6Gender: 
+M  Age: 21Birth Date: 10/10/2000Email: abc@gmail.comMarks: HSC: 89.45ajay is my good friendwhat about you?
+Process returned 0 (0x0)   execution time : 0.029 s
+Press any key to continue.
+
+
+	This out is not in well formatted manner, to display the output in well formatted the escape sequence characters are used
+
+
+        List Of Escape Sequence Characters
+        ===================================
+
+        \n - Newline
+        \t - horz. Tab
+        \a - bell
+        \b - backspace
+        \v - vertical tab
+        \r - carriage return
+        \f - form feed
+        \' - to print '
+        \" - to print "
+        \\ - to print \
+        \? - to print ?
+        %% - to print %
+
+
+
+
+// Problem statement: WAP to display your personal details   (here the // is single line comment)
+
+/*
+    Training: C programming
+    Trainer: Yogesh J Patil		( /* ..... */  - Multiline Comment )
+    Email: abc@gmail.com		comments are used togenerate the help in the program
+    Mobile No: 98 xx xx xx xx
+*/
+int main()
+{
+	printf("\n \a\a\a------ Personal Details ----------\a\a\a");
+	printf("\n Name: Amit Sambhaji Pol");
+	printf("\n Address: 12\\D, \"Anand\" Apt, ch.Shivaji Maharaj Chowk, Pune-6");
+	printf("\n Gender: \'M\' \t Age: 21");
+	printf("\n Birth Date: 10/10/2000");
+	printf("\n Email: abc@gmail.com");
+	printf("\n Marks: HSC: 89.45%% SSC: 67.43%%");
+	printf("\n ajayraj is my good friend\r abhi");
+	printf("\n what about you\?");
+	printf("\n abcd\befghij\b\bklmn");
+	return 0;
+}
+
+//======================================================================================================================
+
+	// 	// 2. Type Decl. Instruction: The aim this instruction is to allocate the memory.
+
+			
+		syntax:
+			<data_type> <var_nm>;
+
+		Now we have to see Data Types <data_type>: 
+
+			what is data type?  ==> It is programming tool, which is responsible for memory allocation.
+		
+			or In another words,
+
+		Data, which is input to computer, is divided into different groups according to the memory needs, where
+		individual group is called type and collectively it is known as data types.
+					
+							C Data Types
+							      |
+					--------------------------------------------------
+					|			|			 |
+				    Built-in		     Derived		    Userdefined		
+					|			|			|
+			  -------------------	 	------------------	       ---------------------
+			  |		    |        	|         |       |	       |	|	   | 
+			Numeric         Non-Numeric   Array    pointer  function    structure  Union     Enum
+			  |                  |
+		----------------        ------------------
+		|		|	|		|
+	    Integers	  Fractional   character     string
+	     (int)	      |		  |
+		          --------      (char)    
+                          |       |
+			(float) (double)
+
+		suppose,
+
+		int x;		 float y;
+
+		x		y
+		[   ]		[        ]
+
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+
+
+	now will see <var_nm>: 
+
+		We know that, variable name is identifier of memory location. there are some rules to select the identifier
+		and these are
+
+		- Uppercase and Lowercase letters are different.
+		- No any special symbol is allowed rather than _ (Not even blank space)
+		- It may be alphanumeric but must starts with alphabet or _
+		- Keyword can not be used as a identifier.
+
+
+	There are 4 differnt type of type decl.
+
+	1. simple decl:
+
+		int x;		char ch;	float ft;
+
+		x		ch		ft
+		[    ]           [ ]             [    ]
+	      2/4 bytes		1 byte		4 bytes
+
+
+
+	2. Multiple Decl:
+
+		int x,y,z;		double d1,d2;
+
+		x	y	z		d1		d2
+		[ ]	[ ]	[ ]		[       ]	[ 	]
+		  2/4 bytes each		    8 bytes each
+
+
+	3. decl. with init:
+
+		int x=10;		char c1='A';
+
+		x	   		c1		
+		[ 10 ]                     [ 'A' ]	 
+	
+	
+	4. Multi. decl. with init:
+
+		int x=10, y=20;		char c1='A', c2='D';
+
+		x	   y			c1		c2
+		[ 10 ]     [ 20 ]                [ 'A' ]	 [ 'D' ]	
+
+
+//---------------------------------------------------------------------------------------------------
+	
+
+
+		There are 4 different basic/Built-in types in C 
+
+		Data type       Memory 			format specifier
+
+		char		1 byte			    %c
+		
+		int 		2 bytes(TC)		    %d
+				4 bytes(GCC)
+
+		float		4 bytes			    %f
+
+		double		8 bytes			    %lf
+
+
+	Let's see, How prinf() used to display the values
+
+		printf("\n Value is: %f",56.3423);
+
+	or	suppose
+		
+		double d =453.567764;
+		printf("\n value of d is %lf",d);
+
+	// WAP to decl-init the variable and display the values of variables
+
+int main()
+{
+	int x=100;
+	float y=45.674;
+	char ch='R';
+	double d=345.6573;
+
+	printf("\n value of x is %d",x);
+	printf("\n y=%f \t val of ch is %c,y,ch);
+	printf("\n the double value is: %lf",d);
+
+	return 0;
+}
+
+
+//------------------------------------------------------------------------------------
+
+	Using scanf() to input the data: The built-in function scanf() is used to input the data from the keyboard.
+				 this is from stdio.h
+
+
+				syntax: 
+					scanf("<format_specifier>",&<var_nm>);
+
+
+	Addressible Memory 64k (65535 bytes)
+
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+		[][][][][][]
+
+			int x;
+			scanf("%d",&x);
+
+			int x,y,z;
+			scanf("%d %d %d",&x,&y,&z);
+
+			char ch;
+			int a;
+			double db;
+			scanf("%c %d %lf",&ch,&a,&db);
+
+
+
+int main()
+{
+    int x;
+
+    printf("\n Enter any integer value: ");
+    scanf("%d",&x);
+    printf("\n value of x is: %d",x);
+    return 0;
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------
+
+	// WAP to input the values of different type and display them.
+
+
+int main()
+{
+    int x;
+    char ch;
+    float ft;
+    double db;
+
+    printf("\n Enter one character,integer and two fractional values: ");
+    scanf("%c %d %f %lf",&ch,&x,&ft,&db);
+
+    printf("\n value of x is: %d",x);
+    printf("\n ch=%c \t ft=%0.3f \n Val of db is %lf",ch,ft,db);
+
+    return 0;
+}
+
+
+
+//-----------------------------------------------------------------------
+
+	// Using the fflush(stdin): to clear the keyboard buffer while taking the character as input
+
+
+// WAP to input and display the values.
+#include<stdio.h>
+int main()
+{
+    int x;
+    char ch;
+
+    printf("\n Enter one integer : ");
+    scanf("%d",&x);
+
+    printf("\n Enter one Character : ");
+    fflush(stdin);
+    scanf("%c",&ch);
+
+    printf("\n value of x is: %d",x);
+    printf("\n ch=%c",ch);
+
+    return 0;
+}
+
+//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+
+ // Arithmatic Instruction: This instruction provides the different operators, which are used to process the data.
+
+				- Assignment Operators [=]:   						
+				- Unary Operators [ - ++ -- (type) sizeof ]:
+				- Arithmatic Operators [ + - * / % ]:
+				- Relational Operators [ < <= > >= ]:
+				- Equality Operators [==, != ]
+				- Logical Operators [ && || !]:
+				- Conditional Operators [ ? : ]:
+				- Bitwise Operators [ & | ^ >> << ]:
+				- Special Operators [ , ; . -> &(ampersand) * ]:
+
+
+
+- Assignment Operators [=]:    It will assigns the constant value, value of variable or answer of expression at its right to
+				      variable at left.
+
+					e.g.
+						x=10;		y=x;		z=x+y;	
+
+
+
+	// WAP to interchange the value of two variables
+
+
+int main()
+{
+    int x,y,tmp;
+
+    printf("\n Enter the values of x and y: ");
+    scanf("%d %d",&x,&y);
+
+    printf("\n Before Interchange: x=%d \t y=%d",x,y);
+    tmp=x;
+    x=y;
+    y=tmp;
+    printf("\n After Interchange: x=%d \t y=%d",x,y);
+    return 0;
+}
+
+output:
+    
+ Enter the values of x and y: 11
+22
+
+ Before Interchange: x=11        y=22
+ After Interchange: x=22         y=11
+Process returned 0 (0x0)   execution time : 8.388 s
+Press any key to continue.
+
+
+//------------------------------------------------------------------------
+
+	// Rewrite above program without using the tmp variable.
+
+
+int main()
+{
+    int x,y,tmp;
+
+    printf("\n Enter the values of x and y: ");
+    scanf("%d %d",&x,&y);
+
+    printf("\n Before Interchange: x=%d \t y=%d",x,y);
+
+    x=x+y;
+    y=x-y;
+    x=x-y;
+
+    printf("\n After Interchange: x=%d \t y=%d",x,y);
+    return 0;
+}
+
+
+//---------------------------------------------------------------------------------------------------------------+
+
+	- Unary Operators [ - ++ -- (type) sizeof ]:
+
+
+	
+		-(Unary Minus) : It will gives the opposite value.
+
+			x=34;
+
+			y=-x;		The - operator is operated on x first, and then the -34 will be assigned to y.
+
+
+	- Increament(++) decreament(--) Operators: 
+
+				The increament operator will increase the value of variable by 1. and the decreament operator
+		decreases the value of operand by 1.
+
+				These operators are divided into two subtypes
+
+
+						    inc/dec opeartors
+							   |
+						  ---------------------
+						  |		      |	
+						 Pre		    Post
+					      (++x,--x)		  (x++, x--)
+
+
+					++x   <--->   x=x+1	<--->	x++
+
+					--x   <--->   x=x-1     <---> 	x--
+
+
+
+
+		Means pre or post increament operator increases the value of operand by 1 where as pre or post decreament operator
+		decreases the value of operand by 1.
+
+			They behaves differently when they are used in the expression.
+
+		suppose,
+				x=4	and     y=9
+
+				and we have to calc. 
+
+					z = ++x + y--;	
+
+				1. operate all pre operators. (x increased by 1 i.e. 5)
+				2. with current values calc. the basic expr. (z=x+y)  ===> (z=5+9) ==> z=14.
+				3. operate all post operators (y decreased by 1, i.e. 8)
+
+
+
+    // Using -, ++ -- operators
+
+int main()
+{
+	int x=4,y=9,z;
+
+	z=-x;
+	printf("\n x=%d \t y=%d \t z=%d",x,y,z); 	// x=4	  y=9	 z=-4
+
+	x++;
+	--y;
+	printf("\n x=%d \t y=%d \t z=%d",x,y,z);  	// x=5	  y=8	 z=-4
+
+	z = ++x + y-- ;
+	printf("\n x=%d \t y=%d \t z=%d",x,y,z);  	// x=6	  y=7	 z=14
+
+	return 0;
+}
+
+
+
+	- (type) and sizeof operators:
+
+		(type) refers to type casting. i.e. changing the type of variable only at the time of calculation.
+
+		suppose, x=13 and y=5, Now we have to calculate the z=x/y.
+
+		Note carefully that, In programming, ans of any expression is converted into type which is highest memory holder
+		present in that expression.
+
+
+			z=x/y  ==> z=(int/int), which gives the int type of value.
+
+						In maths terms, it will be 2.6 but only 2 will be considered.
+
+	 	To get the perfect value, we need any one operand in fractional. So to convert that operand in fractional, just use
+		the casting as,
+
+			z=(float)x/y;	 or	z=x/(float)y;  	 or	z=(float)x/(float)y;
+
+
+   // casting example
+
+int main()
+{
+    int x=13,y=5;
+    float z;
+
+    z=x/y;
+    printf("\n z is %f",z);
+
+    // to get the correct ans, we should convert any one or both N/D to float
+    // only at the time of calculation and which is done by type casting as shown
+
+    z=(float)x/y;
+    printf("\n z is %f",z);
+
+    z=x/(float)y;
+    printf("\n z is %f",z);
+
+    z=(float)x/(float)y;
+    printf("\n z is %f",z);
+
+    return 0;
+}
+
+
+
+
+// sizeof operator: It will gives the memory need in terms of bytes using keyword of that data type. or memory allocated for that
+//  		    for that variable using variable name.
+
+
+	suppose,
+
+		float t=34.56;		double d;	chat ch;
+
+		int x;
+
+		x=sizeof(float);	or x=sizeof(t)  ---> integer value 4 assigned to x in both cases
+
+		printf("\n Memory need of double is %d", sizeof(double) );
+		printf("\n Memory need of double is %d", sizeof(d) );
+		
+
+
+int main()
+{
+    int x=1467;
+    float y;
+
+    printf("\n For int type: %d",sizeof(int));
+    printf("\n For int variable x: %d",sizeof(x));
+
+    printf("\n For float type: %d",sizeof(float));
+    printf("\n For float variable x: %d",sizeof(y));
+
+    printf("\n For char type: %d",sizeof(char));
+    printf("\n For double type: %d",sizeof(double));
+
+    return 0;
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------
+
+	// - Arithmatic Operators [ + - * / % ]:
+
+		// WAP to calc the simple interst
+
+		formula: 	si = ( p * r * n ) / 100 ;
+
+
+int main ()
+{
+    int p,n;
+    float r,si;
+    printf("enter the value of p n and r");
+    scanf("%d %d %f",&p,&n,&r);
+    si=(p*n*r)/100;
+    printf("the simple interest is: %f" ,si);
+    return 0;
+}
+
+
+//------------------------------------------------------------------------------
+
+    // WAP to convert the temp from F to Deg.
+
+    formula: (0°C × 9/5) + 32 = 32°F
+
+            (°F − 32) / 1.8 = °C
+
+
+
+int main()
+{
+    float cesius,fehrenhite;
+
+    printf("Enter the temp in fehrenhite: ");
+    scanf("%f",&fehrenhite);
+
+    celsius = (fehrenhite -32)/1.8 ;
+    printf("temp in cesius is: %f",cesius);
+
+    return 0;
+}
+
+
+//-----------------------------------------------------------------------------------------
+
+
+		// Using / and % Operators
+
+		
+		/ operator gives the Quotient and the % operator gives remainder 
+
+		suppose the expression	
+
+				z = 13 / 5 ;
+
+					
+				   2 <-------- Quotient (13/5)
+				________
+			      5	)  13
+				 - 10
+				________
+				   3  <----- remainder (13%5)
+
+
+			
+
+	
+		13/5 ==> 2		13%5 ==> 3
+
+		234/10 ==> 23		234%10 ==> 4
+
+		2392/10 ==> 239		2392%10 ==> 2
+
+		4/12  ---> 0		4%12 ===> 4
+
+
+
+
+ // WAP to add all digits of any 3 digit number
+
+	no	rem	tot	
+			0
+	285	5	5
+	28	8	13
+	2	2	15
+	0
+
+
+int main()
+{
+	int no,rem,tot=0;
+
+	printf("\n Enter any 3 digit no: ");
+	scanf("%d",&no);
+
+	rem=no%10;
+	tot=tot+rem;
+	no=no/10;
+
+	rem=no%10;
+	tot=tot+rem;
+	no=no/10;
+
+	rem=no%10;
+	tot=tot+rem;
+	no=no/10;
+
+	printf("\n Addition of all digits: %d",tot);
+	return 0;
+}
+
+
+//------------------------------------------------------------------------------------------------------------------------------
+
+	- Relational Operators [ < <= > >= ]:  The relational operators are used to finout the relation between 
+					       two operands. It will from the condition, which is helpful in the
+					       different conditional control statments.
+
+					       The ans of the condition is int value 1 when the condition is true.
+ 					       and the ans is int value 0 when the condition is false.
+
+	
+
+	- Equality Operators [ ==, != ] : It is used to compare the two operands. and again it will forms the condition. when the condition 
+					 is true it represented using int value 1 otherwise 0
+
+
+
+
+
+		suppose,
+
+			x=4	and     y=12  then,
+
+			(x>y) --> gives 0
+
+			(y>x) --> gives 1
+
+			(x%2==0) ---> gives 1
+
+			(y%5==0) --> gives 0
+
+			(x!=y) ----> gives 1
+
+
+
+int main()
+{
+    int a=34,b=46;
+    int ans;
+
+    ans=(a>b);
+    printf("\n Ans is: %d",ans);
+
+    ans=(a>b);
+    printf("\n Ans of a>b is: %d",ans);
+
+    printf("\n a!=b is %d",(a!=b));
+
+    return 0;
+}
+
+
+
+
+//------------------------------------------------------------------------------------------------
+
+	- Logical operators: [ && || ! ] : the logical operators are used to join two or more conditions.
+
+	when the conditions are joined using..
+
+			&&  --> will gives the 1 only when both/all conditions are true otherwise 0.
+
+			|| --> will gives 0 only when both/all conditions are false otherwise it will gives 1
+
+			!(true)--> false		!(false) --> true
+
+			!(1) --> 0			!(0) ---> 1
+
+
+
+
+int main()
+{
+    int a=34,b=46;
+    int ans;
+
+    printf("\n a=%d \t b=%d",a,b);
+
+    ans=(a!=b)&&(b<100);
+    printf("\n (a!=b)&&(b<100) is: %d",ans);
+
+
+    printf("\n (a>b)&&(b<100) is: %d",(a>b)&&(b<100));
+
+    ///----------------------------
+
+    ans=(a>b)||(b<100);
+    printf("\n Ans is: %d",ans);
+
+    ans=(a>b)||(b==100);
+    printf("\n Ans is: %d",ans);
+
+    printf("\n (a%%5==0) is %d", (a%5==0));
+
+    ans=!(a>b);
+    printf("\n Ans is: %d",ans);
+
+
+    return 0;
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------
+
+// - Conditional operator: [? : ] - This is also known as if-then-else or ternary operator. This is the only operator which 
+				    able to take the decision.
+
+
+		syntax:
+				<cond>  ?  <true_part>  :  <false_part>  ;
+
+			Only <true_part> will be executed when <condi> is True otherwise <false_part> will be executed.
+
+
+
+
+    /// WAP to find the max two nos
+
+int main()
+{
+    int a,b,ans;
+
+    printf("\n Enter any two nos: ");
+    scanf("%d %d",&a,&b);
+
+    (a>b) ?  printf("\n a=%d is max",a)   :   printf("\n b=%d is max",b)    ;
+
+    /// Another Way
+
+    ans = (a>b) ? a : b ;
+
+    printf("\n The max from two numbers: %d",ans);
+
+    return 0;
+}
+
+//------------------------------------------------------------------------------
+
+    // WAP to find max from 3 nos
+
+
+int main()
+{
+    int a,b,c,t,ans;
+
+    printf("\n Enter any 3 nos: ");
+    scanf("%d %d %d",&a,&b,&c);
+
+    t=(a>b) ? a : b ;
+
+    ans = (t>c) ? t : c ;
+
+    printf("\n ans is %d",ans);
+
+    return 0;
+}
+
+
+//---------------------------------------------------------------------------------
+
+	// Nesting of conditional operator: using conditional operator within the another 
+	// conditional operator
+
+    // WAP to find max from 3 nos
+
+int main()
+{
+    int a,b,c,ans;
+
+    printf("\n Enter any two nos: ");
+    scanf("%d %d %d",&a,&b,&c);
+
+    ans = (a>b) ?  (a>c)?a:c   :  (b>c)?b:c   ;
+
+    printf("\n ans is %d",ans);
+
+    return 0;
+}
+
+
+//------------------------------------------------------------------------------------------------------------
+
+	- Bitwise Operators [ & | ^ >> << ]: These operators are used to perform the bitlevel operations
+
+					8 4 2 1
+
+				10 -->  1 0 1 0
+
+				12 -->  1 1 0 0
+
+	
+		Note casefully that, In case of..
+
+		
+		&  -->  1 & 1 -> 1 otherwise 0
+
+		| -->   0 | 0 -> 0 otherwise 1
+
+		^  -->  1^1
+			     --> 0 otherwise 1
+			0^0
+
+
+	suppose,	    x=10    (1010)
+			and y=12    (1100) 
+
+
+		(x&y)		(x|y)		(x^y)
+
+		1010		1010		1010
+		1100		1100		1100
+	     ---------      ----------       ----------
+		1000		1110		0110
+		 (8)		 (14)		(6)
+
+
+	ans = (x<<2) ==> shift all bits of x towords left by 2 positions
+
+	       (0000 1010) ===> (0010 1000) ==> 40
+
+
+	ans = (y>>2) ==> shift all bits of y towords rh+ by 2 positions
+
+	       (0000 1100) ===> (0000 0011)  ===> 3
+
+int main()
+{
+	int x=10, y=12, ans;
+
+	ans=(x&y);
+	printf("\n ANDing is: %d",ans);
+
+	ans=(x|y);
+	printf("\n ORing is: %d",ans);
+
+	ans=(x^y);
+	printf("\n XORing is: %d",ans);
+
+	ans = (x<<2);
+	printf("\n After (x<<2) is: %d",ans);
+
+	ans = (y>>2);
+	printf("\n (y>>2) is: %d",ans);
+
+	return 0;
+}
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+	// - Special Operators [ , ; . -> &(ampersand) * ]:
+
+
+			, - used as seperator  e.g.  int x,y,z;
+
+			; - it is used to indicate termination.
+
+			. and -> - these are member access operators
+
+			* - pointer declerator
+
+			& - Ampersand, used to gain the address of variable.
+
+		
+
+//-----------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+
+			// Control Instruction: Used to control or manage the execution flow of your program.
+
+				C provides different control statments for that and these are..
+
+
+
+							Control statments
+							      |
+						------------------------------
+						|			      |
+					Conditional CS			UnConditional CS
+						|				|
+				-------------------------------		----------------------------------
+				|		|	     |		|	   |		|	  |
+			   Decision	     Loop	   Case	       goto      break      continue     return 
+			    |		      |		    |	
+			- if()		    - for()	  switch()
+			- if() else	    - while()
+			- Nesting	    - do while()
+			- Ladder
+
+
+
+	Conditional control statments: needs the condition for working.
+
+	Unconditional control statments: Does not need any condition to work
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+	//  Decision Conditional Control statment:  The Decision control statements are used to take a Decision.
+
+
+	Using if(): used to decide, execute the block of code or not. That block is mentioned in the program as
+
+			syntax:
+				if(<condi>)
+				{
+					-------------;
+					-------------;
+					block of code;
+					-------------;
+					-------------;
+				}
+				
+		- Block of code will be executed only when the condition is true otherwise it will be skipped
+
+	i.e.
+
+
+	int main()
+	{
+		----------;
+		----------;
+
+		if(<cond>)
+		{
+		   ----------;
+		   ----------;
+		   ----------;	// This blocj is executed only when <condi> is true.
+		   ----------;
+		   ----------;
+		}
+
+		----------;
+		----------;
+		----------;
+		----------;
+
+		----------;
+		----------;
+	}
+
+
+    /// WAP to calc the discount. (Apply the 7% discount when total bill is
+   ///                             greater than 1000 )
+
+int main()
+{
+    float p1,p2,p3,tot;
+    float dis=0.0;
+
+    printf("\n Enter the price of 3 Items: ");
+    scanf("%f %f %f",&p1,&p2,&p3);
+
+    tot=p1+p2+p3;
+
+    if(tot>1000)
+    {
+        dis=tot*0.07;
+    }
+
+    printf("\n Total Bill: %0.2f",tot);
+    printf("\n Discount is: %0.2f",dis);
+    printf("\n Pay Rs: %0.2f",(tot-dis));
+
+    return 0;
+}
+
+
+//------------------------------------------------------------------
+
+    // Enter any number and find the entered number is even or odd
+
+
+int main()
+{
+    int no;
+
+    printf("\n Enter any no: ");
+    scanf("%d",&no);
+
+    if(no%2==0)
+    {
+        printf("\n Number is even");
+    }
+
+    if(no%2!=0)
+    {
+        printf("\n Number is odd");
+    }
+    return 0;
+}
+
+
+/// WAP to find the max from two nos using only if()
+*/
+
+int main()
+{
+    int n1,n2;
+
+    printf("\n Enter any two nos: ");
+    scanf("%d %d",&n1,&n2);
+
+    if(n1>n2)
+    {
+        printf("\n N1 is max");
+    }
+
+    if(n2>n1)
+    {
+        printf("\n N2 is max");
+    }
+    return 0;
+}
+
+//------------------------------------------------------------------
+//-------------------------------------------------------------------
+
+	// Using if() else: It is used when you want to execute any one code block from two different blocks
+	//		    according to condition.
+
+
+		syntax:
+			if(<condi>)
+			{
+				-----------------;
+				---------------;
+				----------------;
+			}
+			else 
+			{
+				-----------------;
+				---------------;
+				----------------;
+			}
+
+		when <condi> is  TRUE --> will execute the if() block only
+				 FALSE -> will execute the else block only
+
+
+
+
+  /// WAP to calc the discount. (Apply the 12% discount when total bill is
+   ///                             greater than 1000 otherwise apply discount 5% ) using if() else
+
+int main()
+{
+    float p1,p2,p3,tot,dis;
+
+    printf("\n Enter the price of 3 Items: ");
+    scanf("%f %f %f",&p1,&p2,&p3);
+
+    tot=p1+p2+p3;
+
+    if(tot<=1000)
+    {
+        dis=tot*0.05;
+    }
+    else
+    {
+	dis=tot*0.12;
+    }
+
+    printf("\n Total Bill: %0.2f",tot);
+    printf("\n Discount is: %0.2f",dis);
+    printf("\n Pay Rs: %0.2f",(tot-dis));
+
+    return 0;
+}
+
+//---------------------------------------------------------------------------------------
+
+    // Enter any number and find the entered number is even or odd uding if() else
+
+
+int main()
+{
+    int no;
+
+    printf("\n Enter any no: ");
+    scanf("%d",&no);
+
+    if(no%2==0)
+    {
+        printf("\n Number is even");
+    }
+    else    
+    {
+        printf("\n Number is odd");
+    }
+    return 0;
+}
+
+
+///-----------------------------------------------------------------------------------------------------
+
+/// WAP to find the max from two nos using only if()
+
+int main()
+{
+    int n1,n2;
+
+    printf("\n Enter any two nos: ");
+    scanf("%d %d",&n1,&n2);
+
+    if(n1>n2)
+    {
+        printf("\n N1 is max");
+    }
+    else
+    {
+        printf("\n N2 is max");
+    }
+    return 0;
+}
+
+
+
+	Notes: 
+		- when if() or else or both contains only one statement the {} are optional. 
+		  coz both considers 1 stat. within it bydefault.
+
+		- Only if() can be used but only else can not be used.
+
+		- else dont have any condition in any case.
+
+		- In if() else, else must be just after cmp of if(). No any statement allowed in between.
+	
+		- if() and else, both does not ends with ;. If you use ; at last then it will acts as a null statement.
+
+
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
+	// 	Using Nesting of if() else:
+
+			Nesting refers to using one control statment in to same or another control statement
+
+		here, incase of if() else, using if() and/or if() else within if() and/or if() else
+
+	some combinations:
+
+
+		if()				if()				if()			if()
+		{				{				{			{
+			if()				if()			}				if()
+			{				{			else				{
+			}				}			{				}
+		}					else				if()		}
+							{				{		else
+							}				}		{
+						}				}				if()
+														{
+														}
+													}
+
+
+		
+		if()					if()
+		{					{
+			if()					if()	
+			{					{
+			}					}
+		}						else
+		else						{
+		{						}
+			if()				}
+			{				else
+			}				{
+			else					if()
+			{					{
+			}					}
+		}						else
+								{
+								}
+							}
+
+
+
+//---------------------------------------------------------------------------------------------------------------
+
+	/// Enter any number and if it is greater than 100, find it is even or odd, and if it is less than 100 then
+	/// find it is divisible by 5 or not.
+
+int main()
+{
+	int no;
+
+	printf("\n Enter any no: ");
+	scanf("%d",&no);
+
+	if(no>100)
+	{
+		if(no%2==0)
+		{
+			printf("\n Number is greater than 100 and Even");
+		}
+		else
+		{
+			printf("\n Number is greater than 100 and Odd");
+		}
+	}
+	else
+	{
+		if(no%5==0)
+		{
+			printf("\n Number is less than 100 and Div by 5");
+		}	
+		else
+		{
+			printf("\n Number is less than 100 and Not div by 5");			
+		}
+	}
+	return 0;
+}
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+	/// Enter any three number and find min from them.
+
+		a	b	c
+	----------------------------------
+
+		12	56	89
+
+		56	34	78
+
+		78	34	11
+
+		34	93	2
+
+*/
+
+int main()
+{
+	int a,b,c;
+
+	printf("\n Enter any three numbers: ");
+	scanf("%d %d %d",&a,&b,&c);
+
+	if(a<b)
+	{
+		if(a<c)
+		{
+			printf("\n a=%d is min",a);
+		}
+		else
+		{
+			printf("\n c=%d is min",c);
+		}
+	}
+	else
+	{
+		if(b<c)
+		{
+			printf("\n b=%d is min",b);
+		}
+		else
+		{
+			printf("\n c=%d is min",c);
+		}
+	}
+	return 0;
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------
+
+/// Enter the marks in PCM and if he/she pass in all then cal the percentage and display the grade otherwise
+// display the student is fail. (grade: above 80% -> A+ upto 80% -> A and below 70 -> pass )
+
+int main()
+{
+	int p,c,m,tot;
+	float per;
+
+	printf("\n Enter the marks in 3 subjects: ");
+	scanf("%d %d %d",&p,&c,&m);
+
+	if(p>=40&&c>=40&&m>=40)
+	{
+		printf("\n Student is Pass");
+
+		tot=p+c+m;
+		per=tot/3.0;
+		
+		if(per>80)
+		{
+			printf(" - Grade: A+");
+		}
+		else
+		{
+			if(per>70)
+			{
+				printf(" - Grade: A");
+			}
+			else
+			{
+				printf(" - Grade: Pass");
+			}
+		}
+	}
+	else
+	{
+		printf("\n Student is Fail");
+	}
+	return 0;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+	// Enter any number and find it is div by 5 or div by 3 or div by both or not div both
+
+int main()
+{
+	int no;
+	
+	printf("\n Enter the no: ");
+	scanf("%d",&no);
+
+	if(no%5==0)	
+	{
+		if(no%3==0)
+		{
+			printf("\n No is div by both 3 and 5");
+		}
+		else
+		{
+			printf("\n No is div by 5 only");
+		}
+	}
+	else
+	{
+		if(no%3==0)	
+		{
+			printf("\n No is div by 3 only");
+		}
+		else
+		{
+			printf("\n No is not div by both");
+		}
+	}
+	return 0;
+}
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+
+	// Ladder of if() else:  It is prefered, when nesting grows more than 3 layers
+
+
+	if(<>)
+	{
+		------------;
+		------------;
+	}
+	else if(<>)
+	{
+		------------;
+		------------;
+	}
+	else if()
+	{
+		------------;
+		------------;
+	}
+	[<else>]
+	{
+		------------;
+		------------;
+	}
+
+
+///-------------------------------------------------------------------------------------------------------------
+
+	/// Enter any character thw keyboard and display it is lcase or ucase alphabet, digit or special symbol.
+
+        To perform such operation we need the ascii values of characters
+
+
+            Characters          ASCII Codes
+
+            A to Z              65 to 90
+
+            a to z              97 to 122
+
+            0 to 9              48 to 57
+
+*/
+
+int main()
+{
+	char ch;
+
+	printf("\n Enter the character: ");
+	scanf("%c",&ch);
+	printf("\n Entered Character is: %c",ch);
+
+	if(ch>=65&&ch<=90)
+    {
+        printf("\n Uppercase Character");
+    }
+    else if(ch>=97&&ch<=122)
+    {
+        printf("\n Lowercase Character");
+    }
+    else if(ch>=48&&ch<=57)
+    {
+        printf("\n Digit");
+    }
+    else
+    {
+        printf("\n Special Symbol");
+    }
+
+	return 0;
+}
+
+
+    // There is one alternative, which can be used when you dont know the ascii values
+ 
+int main()
+{
+	char ch;
+
+	printf("\n Enter the character: ");
+	scanf("%c",&ch);
+	printf("\n Entered Character is: %c",ch);
+
+	if(ch>='A'&&ch<='Z')
+    {
+        printf("\n Uppercase Character");
+    }
+    else if(ch>='a'&&ch<='z')
+    {
+        printf("\n Lowercase Character");
+    }
+    else if(ch>='0'&&ch<='9')
+    {
+        printf("\n Digit");
+    }
+    else
+    {
+        printf("\n Special Symbol");
+    }
+
+	return 0;
+}
+
+//---------------------------------------------------------------------------------------------------------
+
+	/// Enter the salary of emp and display designation using the salary amount.
+
+		 upto 1000 -- worker
+		 1K - 3K -- Tr
+		 5K - 7K -- Sr
+		 7K - 12K -- Dr
+		12K - 15K - CEO  
+		
+int main()
+{
+	int sal;
+
+	printf("\n Enter the salary of employee: ");
+	scanf("%d",&sal);
+
+	if(sal<=1000)
+	{
+		printf("\n Worker");
+	}
+	else if(sal<=3000)
+	{
+		printf("Tr");
+	}
+	else if(sal<=5000)
+	{
+		printf("Jr");
+	}
+	else if(sal<=7000)
+	{
+		printf("Sr");
+	}	
+	else if(sal<=12000)
+	{
+		printf("Dr");
+	}	
+	else
+	{
+		printf("CEO");
+	}
+	return 0;
+}
+
+
+//------------------------------------------------------------------------------------------------------
+
+	// Enter the co-cordi of point in 2D system, and find the exact location of point
+
+                             y axis
+		II		^           I
+	     (-,+)		|	(+,+)
+				|  
+				|
+				|
+ -x     <-----------------------|-----------------------> x axis
+				|(0,0)
+				|
+				|
+	       (-,-)		|          (+,-)
+		III		V           IV
+
+			      -y axis
+
+
+int main()
+{
+	int x,y;
+
+	printf("\n Enter the x and y co-odri. of point: ");
+	scanf("%d %d",&x,&y);
+
+	if(x>0 && y>0)
+	{
+		printf("\n 1st Qd");
+	}
+	else if(x<0 && y>0)
+	{
+		printf("\n 2nd Qd");
+	}
+	else if(x<0 && y<0)
+	{
+		printf("\n 3rd Qd");
+	}
+	else if(x>0 && y<0)
+	{
+		printf("\n 4th Qd");
+	}
+	else if(x!=0 && y==0)
+	{
+		printf("\n On x axis");
+	}
+	else if(x==0 && y!=0)
+	{
+		printf("\n On y axis");
+	}
+	else
+	{
+		printf("\n Org");
+	}
+	return 0;
+}
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+
+	* Loops:  Loops are used to avoid the conti. repitition of code in the program.
+					 There are three different loops in C.
+
+
+			1. For() loop		2. While() loop		3. do..While() loop
+
+
+
+	Consider the following code, where it is used to display "hi"
+
+int main()
+{
+	printf("Hi");
+	return 0;
+}
+
+
+	Now we want to display the "hi" ten times
+
+int main()
+{
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+	printf("\n Hi");
+
+	return 0;
+}
+
+	In above program, same statement is present 9 more times, we want to avoid it.
+	and for that loops are used.
+
+
+///----------------------------------------------------------------------------------------------------------
+
+	// Using for() loop: 
+
+	syntax:
+		
+			for( <init> ; <condi> ; <inc/dec/stat/expr> )					
+			{									
+				--------------;							   
+				--------------;						
+				-Body_of_loop-;							 
+				--------------;							
+				--------------;							     
+			}
+
+
+	// here k is iterator, and can be init. to any value, the condition is formed with ref. to initial value of k.
+
+int main()
+{
+	int k;
+	for(k=10;k<20;k++)
+	{
+		printf("\n Hi");
+	}
+	
+	return 0;
+}
+
+int main()
+{
+	int k;
+	for(k=100;k<1000;k=k+100)
+	{
+		printf("\n Hi");
+	}
+
+	return 0;
+}
+
+int main()
+{
+	int i;
+	for(i=0;i<10;i++)
+	{
+		printf("\n Hi");
+	}
+
+	return 0;
+}
+
+//---------------------------------------------------------------------------
+
+	// WAP to add first 10 nos.
+
+			n	tot
+		-----------------------------
+				0
+			0	0
+			1	1
+			2	3
+			3	6
+			4	10
+			5	15
+			....
+
+    /// find the total of first 10 nos
+
+int main()
+{
+	int n,tot;
+
+	printf("\n Program start");
+
+	tot=0;
+	for(n=0;n<10;n++)
+	{
+		tot=tot+n;
+	}
+	printf("\n Total is %d",tot);
+	printf("\n Program end");
+
+	return 0;
+}
+
+//------------------------------------------------------------------------------------------------------------
+
+	// Enter any number and find its multi. table
+
+		no = 5
+		
+			5 x 1 =  5		
+			5 x 2 =  10
+			5 x 3 =  15		
+			5 x 4 =  20
+			....		
+			5 x 10 = 50
+			
+
+int main()
+{
+	int no,m;
+
+	printf("\n Enter the number: ");
+	scanf("%d",&no);
+
+	for(m=1;m<=10;m++)
+	{
+		printf("%d x %d --> %d",no,m,(no*m));
+	}
+	return 0;
+}
+
+//---------------------------------------------------------------------------------------
+
+	//  Enter any 5 nos and add them using loop
+
+int main()
+{
+	int no,tot,i;
+
+	for(tot=0,i=0;i<5;i++)
+	{
+		printf("\n Enter no: ");
+		scanf("%d",&no);
+		tot=tot+no;
+	}
+	printf("\n Total is: %d",tot);
+	return 0;
+}
+
+//--------------------------------------------------------------------------------------------
+
+	// Enter the N Numbers using keyboard and find the addition of all those number.
+
+
+int main()
+{
+	int no,tot,i,cnt;
+
+	printf("\n Enter the count: ");
+	scanf("%d",&cnt);
+
+	for(tot=0,i=0;i<cnt;i++)
+	{
+		printf("\n Enter no: ");
+		scanf("%d",&no);
+		tot=tot+no;
+	}
+	printf("\n Total is: %d",tot);
+	return 0;
+}
+
+//------------------------------------------------------------------------------------------------------
+
+ // WAP to add all digits of  number entered using keyboard
+
+	no	rem	tot	
+			0
+	285	5	5
+	28	8	13
+	2	2	15
+	0
+
+	//   Note carefully that, <init> and <incr/decr> blocks are optional, but both must be there even if they are blank
+
+int main()
+{
+	int no,rem,tot=0;
+
+	printf("\n Enter any 3 digit no: ");
+	scanf("%d",&no);
+
+	for( ; no!=0 ; )
+	{
+		rem=no%10;
+		tot=tot+rem;
+		no=no/10;
+	}
+
+	printf("\n Addition of all digits: %d",tot);
+	return 0;
+}
+
+	// Or can be written as
+
+int main()
+{
+	int no,rem,tot;
+
+	printf("\n Enter any 3 digit no: ");
+	scanf("%d",&no);
+
+	for( tot=0 ; no!=0 ; no=no/10 )
+	{
+		rem=no%10;
+		tot=tot+rem;
+	}
+
+	printf("\n Addition of all digits: %d",tot);
+	return 0;
+}
+
+//====================================================================================================
+
+	// Execution of for() loop when it ends with ; --> In such it will run as a single line loop
+
+		Note: for loops allows the multi. init. and inc/dec/stat statements, in such case there must 
+		      be , in between.  	
+*/
+
+int main()
+{
+	int n,tot;
+
+	for( tot=0,n=0 ; n<10 ; tot=tot+n , n++ );
+	{
+		printf("\n Value of tot is %d", tot);
+	}
+	return 0;
+}
+
+
+
+
+//--------------------------------------------------------------------------------
+
+    // WAP to add even nos and odd nos sep. from range 1-10
+
+
+#include <stdio.h>
+int main()
+{
+    int even=0, odd=0, num;
+    for (num = 0; num <= 10; num++)
+    {
+        if (num % 2 == 0)
+        {
+            even = even + num;
+        }
+        else
+        {
+            odd = odd + num;
+        }
+    }
+    printf("\nOdd = %d", odd);
+    printf("\nEven = %d", even);
+    return 0;
+}
+
+//--------------------------------------------------------------------------------
+
+    // WAP to add even nos and odd nos sep. from N nos entered using keyboard.
+
+int main()
+{
+    int no,cnt,i,et=0,ot=0;
+
+    printf("\n Enter the element count: ");
+    scanf("%d",&cnt);
+
+    for( i=0 ; i<cnt ; i++ )
+    {
+        printf("\n Enter No: ");
+        scanf("%d",&no);
+
+        if(no%2==0)
+        {
+            et=et+no;
+        }
+        else
+        {
+            ot=ot+no;
+        }
+    }
+    printf("\n Even Total: %d \t Odd Total: %d",et,ot);
+    return 0;
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+
+	// Using while loop: 
+
+		Again the aim is same i.e. used to avoid the code rep.
+
+	syntax:
+			while(<cond>)
+			{
+				----------------;
+				----------------;
+				----------------;
+				----------------;	
+			}
+
+		- It will execute the body of loop, till the condition is true.
+
+		- <init> block is absent in while() but you have init. the iterator before starting of loop.
+
+		-  <inc/dec> block is absent, but you have to add atleast one statement which will make the <cond> false
+			  after some iterations. otherwise it will attend the infinite looping.
+
+		- It is same as the for() loop
+
+				<init>;
+				for(;<cond>;)
+				{
+					-------------;
+					--------------;
+					<inc/dec>;
+				}
+
+		- while not ends with ; if you write an end then it attends infinite looping
+		
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+	// WAP to display 1 - 10 nos
+
+int main()
+{
+	int no;
+
+	printf("\n List of Numbers: ");
+	no=1;
+	while(no<=10)
+	{
+		printf("\n %d",no);
+		no++;
+	}
+	printf("\n End of program");
+	return 0;
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+	// WAP to display addition 1 - 10 nos
+
+
+int main()
+{
+	int no,sum=0;
+
+	printf("\n List of Numbers: ");
+	no=1;
+	while(no<=10)
+	{
+	    sum=sum+no;
+		printf("\n %d",no);
+		no++;
+	}
+	printf("\n Sum is %d",sum);
+	printf("\n End of program");
+	return 0;
+}
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+	// WAP to display addition 1 - 10 nos
+
+int main()
+{
+	int no,esum=0,osum=0;
+
+	printf("\n List of Numbers: ");
+	no=1;
+	while(no<=10)
+	{
+	    if(no%2==0)
+        {
+            esum=esum+no;
+        }
+        else
+        {
+            osum=osum+no;
+        }
+		printf("\n %d",no);
+		no++;
+	}
+	printf("\n Even Sum is %d",esum);
+	printf("\n Odd Sum is %d",osum);
+	printf("\n End of program");
+	return 0;
+}
+
+//-------------------------------------------------------------------------------------
+
+    // Program to add all digits of number entered using keyboard
+
+
+int main()
+{
+	int no,rem,tot=0;
+
+	printf("\n Enter any 3 digit no: ");
+	scanf("%d",&no);
+
+	while(no!=0)
+	{
+		rem=no%10;
+		tot=tot+rem;
+		no=no/10;
+	}
+
+	printf("\n Addition of all digits: %d",tot);
+	return 0;
+}
+
+///---------------------------------------------------------------------------------
+
+    /// WAP to add even and off digits of a number
+    
+        19438 ===>  
+        
+            - 8+4   ==> 12
+            - 3+9+1 ==> 13
+
+*/
+
+int main()
+{
+	int no,rem,et=0,ot=0;
+
+	printf("\n Enter any 3 digit no: ");
+	scanf("%d",&no);
+
+	while(no!=0)
+	{
+		rem=no%10;
+		if(rem%2==0)
+		{
+			et=et+rem;
+		}
+		else
+		{
+			ot=ot+rem;
+		}
+		no=no/10;
+	}
+
+	printf("\n Addition of all even digits: %d",et);
+	printf("\n Addition of all odd digits: %d",ot);
+	return 0;
+}
+
+///------------------------------------------------------------------------------------------------------
+
+
+
+    /// Enter the number and find it is prime or not.
+
+
+   suppose number is no=25   start from 2 till 24
+                             again start from 2 and move upto 12
+
+
+ int main()
+ {
+     int no,d,flg;
+
+     printf("\n Enter the number: ");
+     scanf("%d",&no);
+
+     flg=0;
+     d=2;
+     while( d<=(no/2) )
+     {
+         if(no%d==0)
+         {
+            flg=1;
+            break;
+         }
+         d++;
+     }
+     if(flg==0)
+        printf("\n Number is prime");
+     else
+        printf("\n Number is not prime");
+
+     return 0;
+ }
+
+//------------------------------------------------------------------------------------------
+
+	// WAP to calculate the x^y
+
+		2^4 ==> 2*2*2*2 ==> 16
+*/
+
+int main()
+{
+	int x,y,i,ans=1;
+
+	printf("\n Enter the base and expo: ");
+	scanf("%d %d",&x,&y);
+	
+	i=0;
+	while(i<y)
+	{
+		ans=ans*x;
+		i++;
+	}
+	printf("\n %d^%d is %d",x,y,ans);
+	return 0;
+}
+
+//===================================================================================================
+
+	// do..while loop: Aim same as any loop, is to avoid the rep of code.
+
+			do
+			{
+				---------------;
+				---------------;
+				---------------;
+			}while(<cond>);
+	
+
+		- the difference between do while() and for(), while() is both for() and while() are top justified 
+		   where as do while() is bottom justified.
+
+	
+	// WAP to display List of characters with ascii value
+
+int main()
+{
+	int a;
+
+	a=0;
+	do
+	{
+		printf("\n %d ---> %c",a,a);
+        a++;
+	}while(a<128);
+	return 0;
+}
+
+
+//-------------------------------------------------------------------------------------
+
+	// WAP to display the factorial of number entered using keyboard.
+
+		no = 5;		5! = 5*4*3*2*1 --> 120
+
+int main()
+{
+	int no,fact;
+	
+	printf("\n Enter the number: ");
+	scanf("%d",&no);
+
+	fact=1;
+	do
+	{
+		fact=fact*no;
+		no--;		
+	}while(no>=1);	
+	printf("\n the factorial is %d",fact);
+	return 0;
+}
+
+
+//---------------------------------------------------------------------------------
+
+    // WAP to count the number of digits in the entered number.
+
+        e.g.
+                no=3246     digit count: 4
+
+                no=34       digit count: 2
+
+
+                no      cnt
+                         0
+                4587     1
+                458      2
+                45       3
+                4        4
+                0
+
+
+int main()
+{
+    int no,cnt=0;
+
+    printf("\n Enter the no: ");
+    scanf("%d",&no);
+
+    do
+    {
+        cnt++;
+        no=no/10;
+    }while(no!=0);
+    printf("\n Digit Count is: %d",cnt);
+    return 0;
+}
+
+
+///=================================================================================================
+
+    /// WAP to find the max digit from the number
+
+        no=34576    max digit: 7
+
+        no=39845    max digit: 9
+
+
+        no    rem    md    flg
+                            0
+      39845    5     5      1
+      3984     4
+      398      8     8
+      39       9     9
+      3        3
+      0
+*/
+
+int main()
+{
+    int no,rem,md,flg=0;
+
+    printf("\n Enter the number: ");
+    scanf("%d",&no);
+
+    do
+    {
+        rem=no%10;
+        if(flg==0)
+        {
+            md=rem;
+            flg=1;
+        }
+        else if(rem>md)
+        {
+            md=rem;
+        }
+        no=no/10;
+    }while(no!=0);
+
+    printf("\n Max Digit: %d",md);
+    return 0;
+}
+
+
+//==================================================================================================================
+//==================================================================================================================
+
+	// WAP to display list of prime nos from 10 - 100
+
+int main()
+{
+	int no,d,flg;
+
+	for( no=10 ; no<=100 ; no++ )
+	{
+		d=2;
+		flg=0;
+		while( d <= (no/2) )
+		{
+			if(no%d==0)
+			{
+				flg=1;
+				break;
+			}
+			d++;
+		}
+		if(flg==0)
+		{
+			printf("\n %d is prime",no);
+		}
+	}
+}
+
+///-------------------------------------------------------------------------------
+
+///-------------------------------------------------------------------
+
+    // Enter any number thw keyboard and find occurrence of each digit.
+    no = 31371
+
+    Output:
+
+        7 present 1 time
+        3 present 2 times
+        1 present 2 times
+
+int main()
+{
+    int no,dig,dc,rem,tmp;
+    printf("\n Enter the number: ");
+    scanf("%d",&no);
+    tmp=no;
+    for(dig=9;dig>=0;dig--)
+    {
+        no=tmp;
+        dc=0;
+        while(no!=0)
+        {
+            rem=no%10;
+            if(rem==dig)
+            {
+                dc++;
+            }
+            no=no/10;
+        }
+        if(dc>0)
+        {
+            printf("\n digit: %d \t digit count: %d",dig,dc);
+        }
+    }
+    return 0;
+}
+///------------------------------------------------------------------------------
+    /// Enter any number and find the missing digits in it.
+            /// e.g.    29573 --> Missing digits: 0, 1, 4, 6, 8
+
+  no   rem   dig     flg      tmp
+------------------------------------------------
+      29573			   29573
+		    0$	    0
+	      3
+      2957    7
+      295     5
+      29      9
+      2       2
+      0
+------------------------------------------------
+      29573			   29573
+		    1$	    0
+	      3
+      2957    7
+      295     5
+      29      9
+      2       2
+      0
+------------------------------------------------
+      29573			   29573
+		    2	    0
+	      3
+      2957    7
+      295     5
+      29      9
+      2       2	            1
+------------------------------------------------
+      29573			   29573
+		    3	    0
+	      3		    1
+.....
+
+int main()
+{
+    int no,dig,rem,tmp,flg;
+    printf("\n Enter the number: ");
+    scanf("%d",&no);
+    tmp=no;
+    printf("List of missing digit: ");
+    for(dig=0;dig<=9;dig++)
+    {
+        flg=0;
+        no=tmp;
+        while(no!=0)
+        {
+            rem=no%10;
+            if(rem==dig)
+            {
+                flg=1;
+                break;
+            }
+            no=no/10;
+        }
+        if(flg==0)
+        {
+            printf("%5d",dig);
+        }
+    }
+    return 0;
+}
+
+//-------------------------------------------------------------------------------------------------------
+
+    // WAP to find the digital sum of number entered thw keyboard.
+
+        9578 ===> 29 ==> 11 => 2
+
+        output: 2 is digital sum of 9578
+
+int main()
+{
+    int no,sum;
+
+    printf("\n Enter the number: ");
+    scanf("%d",&no);
+    do
+    {
+        sum=0;
+        while(no!=0)
+        {
+            sum=sum+(no%10);
+            no=no/10;
+        }
+        printf("\n sum is: %d",sum);
+        no=sum;
+    }while(no>=10);
+
+    return 0;
+}
+
+///-----------------------------------------------------------------------------------
+
+    /// WAP to generate the possible max number using the digits of entered number.
+
+        i.e.
+            if no=4926      Possible Max: 9642
+
+                   tmp    no     rem   d    nn
+                 ==============================
+                   4926  4926     6     9    0
+                         492      2
+                         49       9          9
+                         4        4
+                         0
+                ------------------------------------
+                         4926     6     8    0
+                         492      2
+                         49       9          9
+                         4        4
+                         0
+                 -----------------------------------
+                                        7...
+                 ---------------------------------
+                        4926      6     6    9
+                                             96
+
+                    ....
+int main()
+{
+    int no,tmp,rem,d,nn=0;
+
+    printf("\n Enter the number: ");
+    scanf("%d",&no);
+
+    tmp=no;
+    for( d=9 ; d>=0 ; d-- )
+    {
+        no=tmp;
+        while(no!=0)
+        {
+            rem=no%10;
+            if(rem==d)
+            {
+                nn=(nn*10)+rem;
+            }
+            no=no/10;
+        }
+    }
+    printf("\n Generated Max Number: %d",nn);
+
+    return 0;
+}
+
+
+///------------------------------------------------------------
+
+    /// WAP to reverse the entered number
+
+        e.g.
+            457  ==> 754
+
+            no      rem     rev
+           457               0
+                    7        7
+            45      5        75
+             4      4        754
+             0
+int main()
+{
+    int no,rev,rem;
+    printf("\n Enter the no: ");
+    scanf("%d",&no);
+
+    rev=0;
+    while(no!=0)
+    {
+        rem=no%10;
+        rev=(rev*10)+rem;
+        no=no/10;
+    }
+
+    printf("\n Reverse No is: %d",rev);
+    return 0;
+}
+
+
+///---------------------------------------------------------
+
+  ///  WAP to find the number is palindrome or not.
+
+        121 ---> 121
+        48684 ---> 48684
+
+
+int main()
+{
+    int no,rev,rem,tmp;
+    printf("\n Enter the no: ");
+    scanf("%d",&no);
+    tmp=no;
+    rev=0;
+    while(no!=0)
+    {
+        rem=no%10;
+        rev=(rev*10)+rem;
+        no=no/10;
+    }
+
+    if(rev==tmp)
+        printf("\n Number is palindrome");
+    else
+        printf("\n Number is not palindrome");
+    return 0;
+}
+
+//----------------------------------------------------------------------
+
+    // WAP to display the list of palindrome numbers from 10-200
+
+int main()
+{
+    int no,i,rev,rem,tmp;
+    for(i=10;i<=200;i++)
+    {
+        no=i;
+        tmp=no;
+        rev=0;
+        while(no!=0)
+        {
+            rem=no%10;
+            rev=(rev*10)+rem;
+            no=no/10;
+        }
+        if(rev==tmp)
+        {
+            printf("%6d",tmp);
+        }
+    }
+    return 0;
+}
+
+//------------------------------------------------------------------------------
+		mathematical series programs
+//------------------------------------------------------------------------------
+
+    WAP to find the ans of following
+
+        Z=1!+2!+3!+....+N!
+
+
+int main()
+{
+    int n,fact,i,cnt,sum=0;
+
+    printf("\n Enter the count: ");
+    scanf("%d",&cnt);
+
+    for(n=1;n<=cnt;n++)
+    {
+        fact=1;
+        i=1;
+        while(i<=n)
+        {
+            fact=fact*i;
+            i++;
+        }
+        printf("%d + ",fact);
+        sum=sum+fact;
+    }
+    printf("\b\b= %d",sum);
+    return 0;
+}
+
+//======================================================
+
+  HW
+    
+    1 + x + (x^2)/2! + (x^3)/3! + (x^4)/4!+ ...+ (x^N)/N!
+
+//================================================================================
+
+//-----------------------------------------------------------------------
+	// WAP to display
+
+        *********
+
+int main()
+{
+    int j;
+    for(j=0;j<9;j++)
+    {
+        printf("*");
+    }
+	return 0;
+}
+
+//-----------------------------------------------------------------------
+	// WAP to display
+
+        *********
+        *********
+        *********
+        *********
+        *********
+
+int main()
+{
+    int i,j;
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<9;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+	return 0;
+}
+
+
+//-----------------------------------------------------------------------
+	// WAP to display
+
+        *********
+        *       *
+        *       *
+        *       *
+        *********
+
+int main()
+{
+    int i,j;
+
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<9;j++)
+        {
+            if(i==0||i==4)
+                printf("*");
+            else if(j==0||j==8)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+///--------------------------------------------------------------------------------------
+
+    // WAP to display
+
+        *
+        **
+        ***
+        ****
+        *****
+        ******
+        *******
+
+
+int main()
+{
+    int i,j;
+    for(i=0;i<7;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+    //-----------------------------------------------------------------------
+    
+        HW:
+    
+              *         *********           *******
+             **         ********             ******
+            ***         *******               *****
+           ****         ******                 **** 
+          *****         *****                   ***  
+         ******         ****                     **
+        *******         ***                       *
+                        **
+                        *
+
+-----------------------------------------------------------------------------------------------------
+//------------------------------------------------- Switch Case ----------------------------------------------
+//-------------------------------------------------------------------------------------------------------------
+
+	Using case control(switch case):- It is used, when there are some pre-defined possiblities and we have to choose
+					  any one according to users choice. in such condition switch case is used. 
+	
+
+
+		Syntax:
+
+			switch(<opt>)
+			{
+				case 1:
+					------------;
+					------------;
+					break;
+				case 2:
+					------------;
+					------------;
+					break;
+				case 3:
+					------------;
+					------------;
+					break;
+				case 4:
+					------------;
+					------------;
+					break;
+				[<default>]:
+					------------;
+					------------;
+			}
+			-------------------;
+			-------------------;
+
+
+// WAP to perform the add,sub, multi, div according to  the users choice.
+
+
+
+
+ /// Using integer case constant
+
+int main()
+{
+    int opt;
+    float n1,n2,ans;
+
+    printf("\n --------- Menu -----------\n");
+    printf("\n 1.Add \n 2.sub \n 3.multi \n 4.div");
+    printf("\n enter your option: ");
+    scanf("%d",&opt);
+
+    printf("\n Enter an two nos: ");
+    scanf("%f %f",&n1,&n2);
+
+    switch(opt)
+    {
+        case 1:
+            ans=n1+n2;
+            break;
+        case 2:
+            ans=n1-n2;
+            break;
+        case 3:
+            ans=n1*n2;
+            break;
+        case 4:
+            ans=n1/n2;
+            break;
+        default:
+            printf("\n Sorry..!! Incorrect option...!!!");
+    }
+    printf("\n Answer is: %f",ans);
+    return 0;
+}
+
+///-----------------------------------------------------------------
+
+
+ /// Using integer case constant
+
+int main()
+{
+    int opt;
+    float n1,n2,ans;
+
+    printf("\n --------- Menu -----------\n");
+    printf("\n a.Add \n b.sub \n c.multi \n d.div");
+    printf("\n enter your option: ");
+    scanf("%c",&opt);
+
+    printf("\n Enter an two nos: ");
+    scanf("%f %f",&n1,&n2);
+
+    switch(opt)
+    {
+        case 'A':
+        case 'a':
+            ans=n1+n2;
+            break;
+        case 'B':
+        case 'b':
+            ans=n1-n2;
+            break;
+        case 'C':
+        case 'c':
+            ans=n1*n2;
+            break;
+        case 'D':
+        case 'd':
+            ans=n1/n2;
+            break;
+        default:
+            printf("\n Sorry..!! Incorrect option...!!!");
+    }
+    printf("\n Answer is: %f",ans);
+    return 0;
+}
+
+//------------------------------------------------------------------------
+
+         //Using the switch() within loop (finate)
+
+int main()
+{
+    int opt;
+    float n1,n2,ans,cnt=0;
+
+    while(cnt<3)
+    {
+        printf("\n --------- Menu -----------\n");
+        printf("\n 1.Add \n 2.sub \n 3.multi \n 4.div");
+        printf("\n enter your option: ");
+        scanf("%d",&opt);
+
+        printf("\n Enter an two nos: ");
+        scanf("%f %f",&n1,&n2);
+
+        switch(opt)
+        {
+            case 1:
+                ans=n1+n2;
+                break;
+            case 2:
+                ans=n1-n2;
+                break;
+            case 3:
+                ans=n1*n2;
+                break;
+            case 4:
+                ans=n1/n2;
+                break;
+            default:
+                printf("\n Sorry..!! Incorrect option...!!!");
+        }
+        printf("\n Answer is: %f",ans);
+        cnt++;
+    }
+    return 0;
+}
+
+
+//------------------------------------------------------------------------
+
+         //Using the switch() within loop (Infinite)
+
+int main()
+{
+    int opt;
+    float n1,n2,ans;
+
+    while(1)
+    {
+        printf("\n --------- Menu -----------\n");
+        printf("\n 1.Add \n 2.sub \n 3.multi \n 4.div \n 5.stop");
+        printf("\n enter your option: ");
+        scanf("%d",&opt);
+
+        printf("\n Enter an two nos: ");
+        scanf("%f %f",&n1,&n2);
+
+        switch(opt)
+        {
+            case 1:
+                ans=n1+n2;
+                break;
+            case 2:
+                ans=n1-n2;
+                break;
+            case 3:
+                ans=n1*n2;
+                break;
+            case 4:
+                ans=n1/n2;
+                break;
+            case 5:
+                exit(0);
+            default:
+                printf("\n Sorry..!! Incorrect option...!!!");
+        }
+        printf("\n Answer is: %f",ans);
+    }
+    return 0;
+}
+
+
+//------------------------------------------------------------------------
+
+         //Using the switch() within loop (Infinite)
+*/
+int main()
+{
+    int opt;
+    float n1,n2,ans;
+
+    while(1)
+    {
+        printf("\n --------- Menu -----------\n");
+        printf("\n 1.Add \n 2.sub \n 3.multi \n 4.div \n 5.stop");
+        printf("\n enter your option: ");
+        scanf("%d",&opt);
+
+        if(opt==5)
+        {
+            break;
+        }
+        printf("\n Enter an two nos: ");
+        scanf("%f %f",&n1,&n2);
+
+        switch(opt)
+        {
+            case 1:
+                ans=n1+n2;
+                break;
+            case 2:
+                ans=n1-n2;
+                break;
+            case 3:
+                ans=n1*n2;
+                break;
+            case 4:
+                ans=n1/n2;
+                break;
+        }
+        printf("\n Answer is: %f",ans);
+    }
+    return 0;
+}
+
+
+///---------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+	Using Unconditional Control Statements:  These control statements does not need any condition.
+
+
+			There are 4 different unconditional control statements, and these are,
+
+				goto,	  continue,	 break,       return
+
+
+	// Using goto: It is used to transfer the control anywhere in the program unconditionaly using <tag_nm>
+		       it is not recommended to used coz it will disturb the logical arrangement of the instructions.
+
+
+			syntax:
+			
+				-------------------;
+				<tag_nm>: ---------;
+				-------------------;
+				-------------------;
+				-------------------;
+				goto <tag_nm>;
+				-------------------;
+				-------------------;
+				-------------------;
+
+ // Using the goto
+
+        // write a program to add 1-10 nos using goto
+
+int main()
+{
+    int no,tot;
+
+    tot=0;
+    no=1;
+
+    back: 
+	tot=tot+no;
+    	no++;
+    	if(no<=10)
+   	{
+        	goto back;
+    	}
+    	printf("\n Total is: %d",tot);
+
+    return 0;
+}
+
+
+
+//------------------------------------------------------------------------------------
+
+        // Using the continue: It will keep the loop in the running condition without considering the
+                               remaining body of loop, means it will push the looping to the next iteration.
+
+
+
+int main()
+{
+    int i,j;
+
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<5;j++)
+        {
+            printf("-");
+            if(j>i)
+                continue;
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//-------------------------------------------------------------------------------------
+
+        //  Using the break: It will terminate the enclosing loop. or used to pass control 
+			     outside switch from case.	
+
+int main()
+{
+    int i,j;
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<5;j++)
+        {
+            printf("-");
+            if(j>i)
+                break;
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+    // Using return statement: It will pass the program control back to calling function from called function.
+                                (will see later in Function Topic)
+
+///======================================================================================================================
+//=======================================================================================================================
+//================================================= ARRAY IN C PROGRAMMING ==============================================
+
+		Array is derived data type, which is indexed/ordered collection of elements having same data 
+		type and continuously arranged in the memory.
+
+			syntax:
+				<data_type> <ar_nm>[<element_count>];
+
+
+				e.g.
+					int ar[5];
+
+					ar 0    1    2    3    4   <--- index
+					  [  ] [  ] [  ] [  ] [  ] <---- value
+					 700   704  708  712  716 <---- Address  
+		
+
+			Note: 
+				- Array index i.e. <element_count> must be constant.
+				- Array counting starts from 0
+				- ar[i] gives the value at i th location, where i is an index
+				- &ar[i] gives the Address of i th location
+				
+
+
+// Initilization Of Array: Assigning the values at the time of memory allocation(decl).
+
+		int x[4]={23,89,45,18};			
+		
+		Only In the initilization of array, Index is optional.
+
+      float y[]={ 4.5, 67.89, 3.623, 90.56, 37.91 }  is equivalent to   float y[5]={ 4.5, 67.89, 3.623, 90.56, 37.91 }
+
+
+// Init array and display it.
+
+       x
+        [12] [56] [90] [5] [23]
+
+int main()
+{
+	int x[5]={12,56,90,5,23};
+
+	printf("%d  ",x[0]);
+	printf("%d  ",x[1]);
+	printf("%d  ",x[2]);
+	printf("%d  ",x[3]);
+	printf("%d  ",x[4]);
+
+	return 0;
+}
+
+
+//---------------------------------------------------------
+
+		// Displayy using loop
+
+int main()
+{
+	int x[5]={12,56,90,5,23};
+    int i;
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+    }
+    printf("\n End of loop");
+	return 0;
+}
+
+
+//-----------------------------------------------------------
+
+	// Input and display of array
+
+int main()
+{
+    int x[5];
+    int i;
+
+	// input
+
+    printf("\n Enter any 5 nos: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+	// display 
+
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+    }
+    printf("\n End of loop");
+    return 0;
+}
+
+//------------------------------------------------------------------------------------
+
+	// Array element processing    /// Array processing
+
+    /// count the even nos from array
+
+int main()
+{
+	int x[5],i,cnt=0;
+
+	/// Input
+    printf("\n Enter any 5 nos: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+    /// Processing
+    for(i=0;i<5;i++)
+    {
+        if(x[i]%2==0)
+        {
+            cnt++;
+        }
+    }
+
+    /// Display
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+    }
+    printf("\n Even element count is: %d",cnt);
+	return 0;
+}
+
+
+//=======================================================================================
+
+
+//------------------------------------------------------------
+
+        // Add all array elements
+
+         0    1    2    3    4
+        [12] [23] [89] [45] [18]
+
+int main()
+{
+    int x[5],i,sum=0;
+
+    printf("\n Enter any 5 numbers: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+    printf("\n Numbers are: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+        sum=sum+x[i];
+    }
+    printf("\n Addition of all array elements: %d",sum);
+    return 0;
+}
+
+//--------------------------------------------------------
+
+    // WAP to add even and odd nos in different variables
+
+
+int main()
+{
+    int no[7],i,esum=0,osum=0;
+
+    printf("\n Enter any 7 numbers: ");
+    for(i=0;i<7;i++)
+    {
+        scanf("%d",&no[i]);
+    }
+
+    /// Processing
+    for(i=0;i<7;i++)
+    {
+        if(no[i]%2==0)
+        {
+            esum=esum+no[i];
+        }
+        else
+        {
+            osum=osum+no[i];
+        }
+    }
+    printf("\n Numbers are: ");
+    for(i=0;i<7;i++)
+    {
+        printf("%6d",no[i]);
+    }
+    printf("\n Addition of even nos: %d",esum);
+    printf("\n Addition of odd nos: %d",osum);
+    return 0;
+}
+
+//-------------------------------------------------------------------------
+
+    /// WAP to display the list of prime nos from array
+
+
+int main()
+{
+    int no[7],i,d,flg;
+
+    printf("\n Enter any 7 numbers: ");
+    for(i=0;i<7;i++)
+    {
+        scanf("%d",&no[i]);
+    }
+    printf("\n Numbers are: ");
+    for(i=0;i<7;i++)
+    {
+        printf("%6d",no[i]);
+    }
+
+    printf("\n List of Prime Nos: ");
+    for(i=0;i<7;i++)
+    {
+        d=2;
+        flg=0;
+        while(d<=(no[i]/2))
+        {
+            if(no[i]%d==0)
+            {
+                flg=1;
+                break;
+            }
+            d++;
+        }
+        if(flg==0)
+            printf("%5d",no[i]);
+    }
+    return 0;
+}
+
+//-------------------------------------------------------------------
+    /// WAP to Copy the data from one array into another.
+
+    x  0       1       2       3      4
+     [23]    [56]    [29]    [34]    [77]
+      |            |
+      V            V
+    y 0       1       2       3      4
+     [23]    [56]    [29]    [34]    [77]
+
+
+int main()
+{
+    int x[5],y[5],i;
+
+    printf("\n Enter 5 nos: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+    /// Copying
+
+    printf("\n Enter 5 nos: ");
+    for(i=0;i<5;i++)
+    {
+        y[i]=x[i];
+    }
+
+    printf("\n  Array x: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%5d",x[i]);
+    }
+
+    printf("\n  Array y: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%5d",y[i]);
+    }
+    return 0;
+}
+
+///------------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+    /// WAP to Copy the data from one array into another in reverse manner
+
+    x  0       1       2       3      4
+     [23]    [56]    [29]    [34]    [77]
+      |            |
+      V            V
+    y 0       1       2       3      4
+     [77]    [34]    [29]    [56]    [23]
+
+
+int main()
+{
+    int x[5],y[5],i,j;
+
+    printf("\n Enter 5 nos: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+    /// Copying
+
+    printf("\n Enter 5 nos: ");
+    for(i=0,j=4;i<5;i++,j--)
+    {
+        y[i]=x[j];
+    }
+
+    printf("\n  Array x: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%5d",x[i]);
+    }
+
+    printf("\n  Array y: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%5d",y[i]);
+    }
+    return 0;
+}
+
+//-------------------------------------------------------------------
+
+    // same program without using j
+
+int main()
+{
+    int x[5],y[5],i;
+
+    printf("\n Enter 5 nos: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+    /// Copying
+
+    printf("\n Enter 5 nos: ");
+    for(i=0;i<5;i++)
+    {
+        y[i]=x[4-i];
+    }
+
+    printf("\n  Array x: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%5d",x[i]);
+    }
+
+    printf("\n  Array y: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%5d",y[i]);
+    }
+    return 0;
+}
+
+//------------------------------------------------------------------------------
+
+    // WAP to find the occurrence of number entered in array.
+
+
+ int main()
+ {
+     int ar[10],no,i,cnt=0;
+
+     printf("\n Enter the 10 Nos: ");
+     for(i=0;i<10;i++)
+     {
+         scanf("%d",&ar[i]);
+     }
+
+     printf("\n Enter the number: ");
+     scanf("%d",&no);
+
+     for(i=0;i<10;i++)
+     {
+         if(ar[i]==no)
+         {
+             cnt++;
+         }
+     }
+
+     printf("\n Array elements are: ");
+     for(i=0;i<10;i++)
+     {
+         printf("%5d",ar[i]);
+     }
+     if(cnt>0)
+        printf("\n %d is present %d times",no,cnt);
+    else
+        printf("%d is absent  in an array",no);
+
+    return 0;
+ }
+
+
+ ///----------------------------------------------------------------------------------
+
+        // Sorting techniques:
+
+                Sorting refers to arranging the array elements either
+                in ascending order or in descending order. There are several different
+                techniques, from which we have to study
+
+                    - Selection Sort
+                    - Bubble Sort
+
+
+  /// Selection Sort:
+
+                0   1   2   3   4
+
+                55  44  33  22  11
+ select pos 0 - 11  55  44  33  22
+ select pos 1 - 11  22  55  44  33
+ select pos 2 - 11  22  33  55  44
+ select pos 3 - 11  22  33  44  55
+
+
+int main()
+{
+    int x[5],i,j,tmp;
+
+    printf("\n Enter any 5 numbers: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+    printf("\n Before Sort Numbers are: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+    }
+
+    /// Sorting Process
+
+    for(i=0;i<4;i++)
+    {
+        for(j=i+1;j<5;j++)
+        {
+            if(x[i]>x[j])
+            {
+                tmp=x[i];
+                x[i]=x[j];
+                x[j]=tmp;
+            }
+        }
+    }
+
+    printf("\n After Sort Numbers are: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+    }
+
+    return 0;
+}
+
+
+//--------------------------------------------------------------------------------------
+
+ - Bubble Sort
+
+
+                0   1   2   3   4
+
+                55  44  33  22  11
+                44  55  33  22  11
+           0    44  33  55  22  11
+                44  33  22  55  11
+                44  33  22  11  55
+               ---------------------
+                44  33  22  11  55
+                33  44  22  11  55
+    i      1    33  22  44  11  55
+                33  22  11  44  55
+               ---------------------
+                33  22  11  44  55
+           2    22  33  11  44  55
+                22  11  33  44  55
+               --------------------
+           3    22  11  33  44  55
+                11  22  33  44  55
+
+
+int main()
+{
+    int x[5],i,j,tmp;
+
+    printf("\n Enter any 5 numbers: ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+
+    printf("\n Before Sort Numbers are: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+    }
+
+    /// Sorting Process
+
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<5-i;j++)
+        {
+            if(x[j]>x[j+1])
+            {
+                tmp=x[j];
+                x[j]=x[j+1];
+                x[j+1]=tmp;
+            }
+        }
+    }
+
+    printf("\n After Sort Numbers are: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%6d",x[i]);
+    }
+
+    return 0;
+}
+
+
+///=========================================================================================
+
+//  Searching Techniques:
+
+		Searching Techniques: It refers to finding the element is present in the array or not.
+
+			There are two different types of search techniques
+
+				- Sequential search:
+				- Binary search
+
+
+     Sequential search: It this technique, we have start from 0th position after that 1st and so on.. till
+				     the end.
+
+int main()
+{
+    int arr[10],i,no,pos=-1;
+
+    printf("\n Enter ten nos: ");
+    for( i=0 ; i<10 ; i++ )
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    printf("\n Enter the number to be searched: ");
+    scanf("%d",&no);
+
+    for(i=0;i<10;i++)
+    {
+        if(arr[i]==no)
+        {
+            pos=i;
+            break;
+        }
+    }
+
+    printf("\n The array elements are: ");
+    for(i=0;i<10;i++)
+    {
+        printf("%5d",arr[i]);
+    }
+
+    if(pos!=-1)
+        printf("\n %d is present at %d position",no,pos);
+    else
+        printf("\n Number is absent in array");
+
+    return 0;
+}
+
+//------------------------------------------------------------------------------------
+
+    - Binary search: In case of binary search implementation, the array must be sorted.
+
+    suppose, Array is
+
+        0                                       9
+        12  23  45  56  89  97  159  245  285  300
+
+    Steps:
+			1. mark start and end position
+
+			2. calculate the mid position [ mid=(start+end)/2 ]
+
+            3. check the number is present at mid position or not.
+
+				if Yes --> print the no is present at xx position
+
+					   |--> check the no is less than arr[mid],then end=mid-1
+				if No->|
+					   |--> check the no is greater than arr[mid],then start=mid+1
+
+            4. perform same operation till start is less than or equals to end.
+
+
+
+int main()
+{
+    int arr[10],i,no,pos=-1;
+
+    printf("\n Enter ten nos: ");
+    for( i=0 ; i<10 ; i++ )
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    printf("\n Enter the number to be searched: ");
+    scanf("%d",&no);
+
+    start=0;
+    end=9;
+    do
+    {
+        mid=(start+end)/2;
+        if(arr[mid]==no)
+        {
+            pos=mid;
+            break;
+        }
+        else if(no<arr[mid])
+        {
+            end=mid-1;
+        }
+        else
+        {
+            start=mid+1;
+        }
+
+    }while(start<=end);
+
+    printf("\n The array elements are: ");
+    for(i=0;i<10;i++)
+    {
+        printf("%5d",arr[i]);
+    }
+
+    if(pos!=-1)
+        printf("\n %d is present at %d position",no,pos);
+    else
+        printf("\n Number is absent in array");
+
+    return 0;
+}
+
+///======================================================================================
+
+    ///  // 2D array:  It is collection of 1D Array.
+
+	We know that array is collection of elements having same data type.
+
+	data type-|
+			  |- Built-in - int, char, float, double
+			  |- derived  - Array, Pointer
+			  |- user defined - structure, union and enum
+
+
+                                    int x[4];
+                                                x 0 1 2 3
+                collection of 4 int values   ==>  [][][][]
+
+                                                   0           1           2         3         4
+                                                 0 1 2 3    0 1 2 3    0 1 2 3    0 1 2 3   0 1 2 3
+           colllection of 5 such elelemts  ===> [][][][] | [][][][] | [][][][] | [][][][] | [][][][]
+
+
+			 How to create the such collection:  It is created by using decl. as shown
+
+
+			<data_type> <ar_nm>[No_of_elements][<Size_of_every_internal_elements>];
+
+		e.g.
+			In above case,
+					int x[5][4];
+
+
+
+		can be represented in matrix from as,
+
+				[][][][] 0
+				[][][][] 1
+				[][][][] 2	There are 5 different rows
+				[][][][] 3
+				[][][][] 4
+		        0 1 2 3
+			4 different cols in each row
+
+
+        The memory map look like as,
+
+     ________0____________________1________________2______________3_________________4__________
+    |    0  1  2  3   |    0  1  2  3   |    0  1  2  3   |   0  1  2  3   |   0  1  2  3    |
+    |   [] [] [] []   |   [] [] [] []   |   [] [] [] []   |   [] [] [] []  |   [] [] [] []   |
+    |_________________|_________________|_________________|________________|_________________|
+
+   // Init and display 2D Array.
+
+
+		<data_type> <ar_nm>[<rows>][<cols>]={ {#,#,#..}, {#,#,#..}, {#,#,#..},{#,#,#..}, {#,#,#..}...};
+
+		  e.g.
+
+            		int x[4][3]={ {11,22,33}, {12,23,34}, {67,78,26}, {90,82,59} };
+
+
+	// Init 2D Array and display it.
+
+int main()
+{
+	int x[4][3]={ {11,22,33}, {12,23,34}, {67,78,26}, {90,82,59} };
+	int i,j;
+
+	for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",x[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//--------------------------------------------------------------------
+
+	// Input 2D Array and display it.
+
+int main()
+{
+	int x[4][3];
+	int i,j;
+	printf("\n Enter the array of 4x3: ");
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&x[i][j]);
+        }
+        printf("\n");
+    }
+
+	printf("\n Entered array \n");
+	for(i=0;i<4;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",x[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//--------------------------------------------------------------------
+
+	// Input two 2D Arrays and display addition.
+
+        x               y           z
+
+     1   2   3      1   2   3      1   4   6
+     4   5   6      4   5   6      8   10  12
+     7   8   9      7   8   9      14  16  18
+
+
+int main()
+{
+	int x[3][3],y[3][3],z[3][3];
+	int i,j;
+	printf("\n Enter the array of 4x3: ");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&x[i][j]);
+        }
+    }
+    printf("\n Enter the array of 4x3: ");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&y[i][j]);
+        }
+    }
+    ///------------------------------------------------------------
+    /// Addition of arrays
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+           z[i][j]=x[i][j]+y[i][j];
+        }
+    }
+
+    ///------------------------------------------------------------
+	printf("\n Entered array x \n");
+	for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",x[i][j]);
+        }
+        printf("\n");
+    }
+	printf("\n Entered array y \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",y[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n Addition of arrays (z) \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",z[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+///--------------------------------------------------------------------
+
+	/// Input two 2D Arrays and display multi.
+
+        x               y           z
+
+     1   2   3      1   2   3      (1*1)+(2*4)+(3*7)    ()+()+()    ()+()+()
+     4   5   6      4   5   6      ()+()+()             ()+()+()    ()+()+()
+     7   8   9      7   8   9      ()+()+()             ()+()+()    ()+()+()
+
+
+int main()
+{
+	int x[3][3],y[3][3],z[3][3];
+	int i,j,k;
+	printf("\n Enter the array of 4x3: ");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&x[i][j]);
+        }
+    }
+    printf("\n Enter the array of 4x3: ");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&y[i][j]);
+        }
+    }
+    ///------------------------------------------------------------
+    /// Addition of arrays
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            z[i][j]=0;
+            for(k=0;k<3;k++)
+            {
+                z[i][j]+=x[i][k]*y[k][j];
+            }
+        }
+    }
+
+    ///------------------------------------------------------------
+	printf("\n Entered array x \n");
+	for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",x[i][j]);
+        }
+        printf("\n");
+    }
+	printf("\n Entered array y \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",y[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n Addition of arrays (z) \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%5d",z[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+///===============================================================================
+
+    /// Character Array: Collection of characters
+
+         Decl: syntax:
+
+            char <ar_nm>[<index>];
+
+            e.g.
+                char str[20];
+
+                str 0 1 2 3 4 .....                   ...19
+                   [][][][][][][][][][][][][][][][][][][][]
+
+
+    // Init and display the of character array:
+    // ========================================
+
+    char str[]={'h','e','l','l','o',' ','g','u','y','s','\0'};
+        // Like the numeric array, index is optional
+
+ int main()
+ {
+     char str[]={'h','e','l','l','o',' ','g','u','y','s','\0'};
+     char ch[]="good evening all of you";
+     int i;
+
+     // display Method 1
+     for(i=0;str[i]!='\0';i++)
+     {
+        printf("%c",str[i]) ;
+     }
+
+     // display method 2
+     printf("\n String is: %s",str); // %s is format specifier for string
+
+    // display method 3
+     printf("\n String is: ");
+     puts(str); // it is built-in function used to display the string
+
+     return 0;
+ }
+
+
+//----------------------------------------------------------------------------
+
+    // Input and display the string
+
+    1. Using loop and the %c: Not the correct option
+
+int main()
+{
+    char str[45];
+    int i;
+
+    printf("\n Enter any string: ");
+    for(i=0;i<?????;i++)  // condition is the problem (i<?????)
+    {
+        scanf("%c",&str[i]);
+    }
+
+    printf("\n String is: %s",str);
+    return 0;
+}
+
+
+//---------------------------------------------------------------
+
+    2. Using %s as a format specifier in scanf():
+
+            for 1 word it is fine but for more words it will
+            consider the space as a string terminating character.
+
+
+int main()
+{
+    char str[45];
+    int i;
+
+    printf("\n Enter any string: ");
+    scanf("%s",&str);
+
+    printf("\n String is: %s",str);
+    return 0;
+}
+
+//---------------------------------------------------------------------------------------------
+
+    3. using %[^\n] as a format specifier: it is working fine
+
+
+int main()
+{
+    char str[45];
+    int i;
+
+    printf("\n Enter any string: ");
+    scanf("%[^\n]",&str);
+
+    printf("\n String is: %s",str);
+    return 0;
+}
+
+
+//-------------------------------------------------------------------
+
+    // 4. Using the gets(): It is built-in function recommended to input the string.
+                            it will take the character by character input and place the null
+                            character('\0') at the end.
+
+
+int main()
+{
+    char str[45];
+    int i;
+
+    printf("\n Enter any string: ");
+    gets(str);
+
+    printf("\n String is: %s",str);
+    return 0;
+}
+
+
+//========================================================================================
+//========================================================================================
+
+        String processing:
+
+    /// WAP to find the length of string
+
+int main()
+{
+    char str[50];
+    int i,cnt=0;
+    printf("\n Enter string: ");
+    gets(str);
+
+    for(i=0;str[i]!='\0';i++)
+    {
+        cnt++;
+    }
+    printf("\n String is: %s",str);
+    printf("\n Length of string is: %d",cnt);
+    return 0;
+}
+
+
+///------------------------------------------------------------------
+
+    /// WAP to copy the string into another location
+
+        s
+            hello good day
+
+        ch  hello g.......\0
+
+
+int main()
+{
+    char s[50],ch[60];
+    int i;
+
+    printf("\n Enter the string: ");
+    gets(s);
+
+    for(i=0;s[i]!='\0';i++)
+    {
+        ch[i]=s[i];
+    }
+    ch[i]='\0';
+
+    printf("\n original String: %s",s);
+    printf("\n Copied string: %s",ch);
+
+    return 0;
+}
+
+//---------------------------------------------------------------
+
+    // WAP to convert string into uppercase
+
+
+int main()
+{
+    char str[50];
+    int i;
+    printf("\n Enter the string: ");
+    gets(str);
+
+    printf("\n Entered string is; %s",str);
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(str[i]>=97&&str[i]<=122)  /// if(str[i]>='a'&&str[i]<='z')
+        {
+            str[i]=str[i]-32;
+        }
+    }
+    printf("\n Uppercase string is; %s",str);
+    return 0;
+}
+
+//------------------------------------------------
+    // Half ucase and half lcase
+
+int main()
+{
+    char str[50];
+    int i,len=0;
+    printf("\n Enter the string: ");
+    gets(str);
+
+    for(i=0;str[i]!='\0';i++)
+    {
+        len=len+1;
+    }
+    printf("\n Entered string is; %s",str);
+    for(i=0;i<(len/2);i++)
+    {
+        if(str[i]>=97&&str[i]<=122)  /// if(str[i]>='a'&&str[i]<='z')
+        {
+            str[i]=str[i]-32;
+        }
+    }
+    printf("\n Uppercase string is; %s",str);
+    return 0;
+}
+
+///--------------------------------------------------------------------
+
+    // WAP to count the no of words in the string
+
+int main()
+{
+    char str[50];
+    int cnt=0,i;
+
+    printf("\n Enter the string: ");
+    gets(str);
+
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(str[i]==' ') ///  if(str[i]==32)
+        {
+            cnt++;
+        }
+    }
+    printf("\n String is: %s",str);
+    printf("\n Word Count: %d",cnt+1);
+
+    return 0;
+}
+
+///--------------------------------------------------------------------
+
+    // WAP to count the no of words in the string (with multiple spaces)
+
+
+        str
+            ------hello----good---day-to------all----of--you---------\0
+                  |                                        |
+                  sp                                      ep
+
+int main()
+{
+    char str[50];
+    int cnt=0,i,sp,ep;
+
+    printf("\n Enter the string: ");
+    gets(str);
+
+    for(i=0;str[i]==32;i++);
+    sp=i;
+
+    for(i=0;str[i]!='\0';i++);
+    for(i--;str[i]==32;i--);
+    ep=i;
+
+    while(sp<=ep)
+    {
+        if(str[sp]!=32&&str[sp-1]==32)
+        {
+            cnt++;
+        }
+        sp++;
+    }
+    if(str[0]!=32)
+    {
+        cnt++;
+    }
+    printf("\n String is: %s",str);
+    printf("\n Word Count: %d",cnt);
+
+    return 0;
+}
+
+//----------------------------------------------------------------------------
+
+    /// WAP to convert the string into titlecase
+
+        str
+            ------hello----good---day-to------all----of--you---------\0
+                  |                                        |
+                  sp                                      ep
+
+int main()
+{
+    char str[50];
+    int cnt=0,i,sp,ep;
+
+    printf("\n Enter the string: ");
+    gets(str);
+
+    for(i=0;str[i]==32;i++);
+    sp=i;
+
+    for(i=0;str[i]!='\0';i++);
+    for(i--;str[i]==32;i--);
+    ep=i;
+
+    while(sp<=ep)
+    {
+        if(str[sp]!=32&&str[sp-1]==32)
+        {
+            if(str[sp]>=97&&str[sp]<=122)
+            {
+                str[sp]=str[sp]-32;
+            }
+        }
+        else if(str[sp]>=65&&str[sp]<=90)
+        {
+            str[sp]=str[sp]+32;
+        }
+        sp++;
+    }
+    if( (str[0]!=32)&&(str[0]>=97&&str[0]<=122) )
+    {
+        str[0]=str[0]-32;
+    }
+    printf("\n String is: %s",str);
+    printf("\n Word Count: %d",cnt);
+
+    return 0;
+}
+
+
+
+//--------------------------------------------------------------------------------------------
+
+	 // 2D Character Array:  it is collection of 1D character arrays.
+
+
+		char s[50];
+
+			s
+                         [][][][][][][][][][][][][][][][][][][][][][] --> space for 50 characters
+
+
+		now we have to allocate the space for the multiple character arrays.
+
+
+		Syntax:
+			char <ar_nm>[<no_of_rows>][<no_of_cols/row>];
+
+			e.g.
+
+				char names[4][50];
+
+	names ___________0_______________1__________________2_________________3________
+	      |	0  1 2..	    | 0  1 2..	      |  0  1 2..       | 0  1 2..	      |
+	      | [][][][][][][]  | [][][][][][][]  | [][][][][][][]  | [][][][][][][]  |
+	      |_________________|_________________|_________________|_________________|
+
+
+
+	can be represented in matrix form as..
+
+		0 -> [][][][][][][][][][][][][][][][][][][][][][]
+		1 -> [][][][][][][][][][][][][][][][][][][][][][]
+		2 -> [][][][][][][][][][][][][][][][][][][][][][]
+		3 -> [][][][][][][][][][][][][][][][][][][][][][]
+
+
+
+//--------------------------------------------------------------------------------
+
+	// Init and display 2D character array.
+              str
+		[a][m][i][t][\0][][][][][][][][][][][][][][][][][]
+		[s][u][j][e][e][t][\0][][][][][][][][][][][][][][]
+		[d][i][v][y][a][\0][][][][][][][][][][][][][][][]
+		[s][h][i][v][\0][][][][][][][][][][][][][][][][][]
+
+
+	// Init and display 2D character array.
+
+int main()
+{
+	char str[4][50]={"amit","sujeet","divya","shiv"};
+	int i;
+	printf("\n List of elements: \n");
+	for(i=0;i<4;i++)
+    {
+        puts(str[i]);
+    }
+    return 0;
+}
+
+
+//-------------------------------------------------------------------
+
+	// Init and display 2D character array.
+
+int main()
+{
+	char str[4][50];
+	int i;
+	printf("\n enter the name of 4 friends: ");
+	for(i=0;i<4;i++)
+    {
+        gets(str[i]);
+    }
+	printf("\n List of elements: \n");
+	for(i=0;i<4;i++)
+    {
+        puts(str[i]);
+    }
+    return 0;
+}
+
+//==============================================================================
+//==============================================================================
+//====================== Pointer in C ==========================================
+//==============================================================================
+
+
+
+
+
+
+
